@@ -4,11 +4,6 @@
     name: netnewswire
     state: upgraded
 
-- name: Install Sogou
-  community.general.homebrew_cask:
-    name: sogouinput
-    state: upgraded
-
 - name: Install Alfred
   community.general.homebrew_cask:
     name: alfred
@@ -52,6 +47,11 @@
 - name: Install Yabai
   community.general.homebrew:
     name: "koekeishiya/formulae/yabai"
+    state: present
+
+- name: Install skhd
+  community.general.homebrew:
+    name: "koekeishiya/formulae/skhd"
     state: present
 
 - name: Install Hook
