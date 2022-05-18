@@ -19,3 +19,8 @@
     name: corkscrew
     state: upgraded
 
+- name: Install GitHub cli
+  community.general.homebrew:
+    name: gh
+    state: upgraded
+
