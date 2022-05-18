@@ -1,0 +1,21 @@
+---
+- name: Install zsh
+  community.general.homebrew:
+    name: zsh
+    state: upgraded
+
+- name: Install autojump
+  community.general.homebrew:
+    name: autojump
+    state: upgraded
+
+- name: Install exa
+  community.general.homebrew:
+    name: exa
+    state: upgraded
+
+- name: Install corkscrew
+  community.general.homebrew:
+    name: corkscrew
+    state: upgraded
+

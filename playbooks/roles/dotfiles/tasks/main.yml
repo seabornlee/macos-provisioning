@@ -1,0 +1,8 @@
+---
+- name: Install yadm
+  community.general.homebrew:
+    name: yadm
+    state: present  
+
+- name: Clone configuration
+  command: "yadm clone -f https://github.com/{{ dotfiles_repo }}.git"

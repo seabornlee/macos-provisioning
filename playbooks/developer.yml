@@ -5,6 +5,8 @@
     ansible_remote_tmp: /tmp
     git_user: "Seaborn Lee"
     git_email: "seabornlee.cn@gmail.com"
+    dotfiles_repo: "seabornlee/yadm-dotfiles"
+    jdk: "11.0.15-zulu"
   pre_tasks:
     - name: "Ensure current user has admin privileges"
       ansible.builtin.shell:
@@ -21,5 +23,8 @@
       changed_when: false      
   roles:
     - poweruser
+    - android-developer
+    - cli
     - any-developer
-    #- node-developer
+    - dotfiles
+    - daily

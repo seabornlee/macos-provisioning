@@ -1,0 +1,96 @@
+---
+- name: Install NetNewsWire
+  community.general.homebrew_cask:
+    name: netnewswire
+    state: upgraded
+
+- name: Install Sogou
+  community.general.homebrew_cask:
+    name: sogouinput
+    state: upgraded
+
+- name: Install Alfred
+  community.general.homebrew_cask:
+    name: alfred
+    state: upgraded
+
+- name: Install 1Pasword
+  community.general.homebrew_cask:
+    name: 1password
+    state: present
+
+- name: Install WeChat
+  community.general.homebrew_cask:
+    name: wechat
+    state: upgraded
+
+- name: Install Warp terminal
+  community.general.homebrew_cask:
+    name: warp
+    state: upgraded
+
+- name: Install EpocCam
+  community.general.homebrew_cask:
+    name: epoccam
+    state: upgraded
+
+- name: Install Lunar
+  community.general.homebrew_cask:
+    name: lunar
+    state: upgraded
+
+- name: Install Google Chrome
+  community.general.homebrew_cask:
+    name: google-chrome
+    state: upgraded
+
+- name: Install Tencent Meeting
+  community.general.homebrew_cask:
+    name: tencent-meeting
+    state: upgraded
+
+- name: Install Yabai
+  community.general.homebrew:
+    name: "koekeishiya/formulae/yabai"
+    state: present
+
+- name: Install Hook
+  community.general.homebrew_cask:
+    name: hook
+    state: upgraded
+
+- name: Install Microsoft Office
+  community.general.homebrew_cask:
+    name: microsoft-office
+    state: upgraded
+
+- name: Install Telegram
+  community.general.homebrew_cask:
+    name: telegram
+    state: upgraded
+
+- name: Install Mimestream
+  community.general.homebrew_cask:
+    name: mimestream
+    state: upgraded
+
+- name: Install Zoom
+  community.general.homebrew_cask:
+    name: zoom
+    state: upgraded
+
+- name: Install OmniFocus
+  community.general.homebrew_cask:
+    name: omnifocus
+    state: upgraded
+
+- name: Install Notion
+  community.general.homebrew_cask:
+    name: notion
+    state: upgraded
+
+- name: Install Discord
+  community.general.homebrew_cask:
+    name: discord
+    state: upgraded
+
