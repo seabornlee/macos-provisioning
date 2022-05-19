@@ -1,4 +1,9 @@
 ---
+- name: Install Hidden Bar
+  community.general.homebrew_cask:
+    name: hiddenbar
+    state: upgraded
+
 - name: Install DeepL
   community.general.homebrew_cask:
     name: deepl
