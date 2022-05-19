@@ -24,3 +24,7 @@
     name: gh
     state: upgraded
 
+- name: Install tldr
+  community.general.homebrew:
+    name: tldr
+    state: upgraded
