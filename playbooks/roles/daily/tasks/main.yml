@@ -1,4 +1,9 @@
 ---
+- name: Install Flomo
+  community.general.homebrew_cask:
+    name: flomo
+    state: upgraded
+
 - name: Install Hidden Bar
   community.general.homebrew_cask:
     name: hiddenbar
