@@ -1,4 +1,9 @@
 ---
+- name: Install DeepL
+  community.general.homebrew_cask:
+    name: deepl
+    state: upgraded
+
 - name: Install NetNewsWire
   community.general.homebrew_cask:
     name: netnewswire
@@ -44,14 +49,19 @@
     name: tencent-meeting
     state: upgraded
 
-- name: Install Yabai
-  community.general.homebrew:
-    name: "koekeishiya/formulae/yabai"
-    state: present
+# - name: Install Yabai
+#   community.general.homebrew:
+#     name: "koekeishiya/formulae/yabai"
+#     state: present
 
-- name: Install skhd
-  community.general.homebrew:
-    name: "koekeishiya/formulae/skhd"
+# - name: Install skhd
+#   community.general.homebrew:
+#     name: "koekeishiya/formulae/skhd"
+#     state: present
+
+- name: Install Amethyst
+  community.general.homebrew_cask:
+    name: amethyst
     state: present
 
 - name: Install Hook
