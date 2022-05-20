@@ -1,4 +1,10 @@
 ---
+
+- name: Install Monitor Control
+  community.general.homebrew_cask:
+    name: monitorcontrol
+    state: upgraded
+
 - name: Install Flomo
   community.general.homebrew_cask:
     name: flomo
@@ -42,11 +48,6 @@
 - name: Install EpocCam
   community.general.homebrew_cask:
     name: epoccam
-    state: upgraded
-
-- name: Install Lunar
-  community.general.homebrew_cask:
-    name: lunar
     state: upgraded
 
 - name: Install Google Chrome
