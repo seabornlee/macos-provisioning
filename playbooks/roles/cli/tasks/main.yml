@@ -1,4 +1,9 @@
 ---
+- name: Install tree
+  community.general.homebrew:
+    name: tree
+    state: upgraded
+
 - name: Install zsh
   community.general.homebrew:
     name: zsh
