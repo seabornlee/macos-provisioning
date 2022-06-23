@@ -1,4 +1,9 @@
 ---
+- name: Install Fastlane
+  community.general.homebrew:
+    name: fastlane
+    state: upgraded
+
 - name: Install SDKMAN
   ansible.builtin.shell: |
     curl -s "https://get.sdkman.io" | bash

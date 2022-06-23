@@ -1,5 +1,10 @@
 ---
 
+- name: Install Session messenger
+  community.general.homebrew_cask:
+    name: session
+    state: upgraded
+
 - name: Install Monitor Control
   community.general.homebrew_cask:
     name: monitorcontrol

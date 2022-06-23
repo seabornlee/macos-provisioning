@@ -37,6 +37,11 @@
     name: jetbrains-toolbox
     state: present  
 
+- name: Install GitHub Desktop
+  community.general.homebrew_cask:
+    name: github
+    state: present  
+
 - block: 
   - name: "Install docker : Check existing installation"
     shell: "which docker"

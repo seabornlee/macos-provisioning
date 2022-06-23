@@ -1,4 +1,9 @@
 ---
+- name: Install OCR
+  community.general.homebrew:
+    name: schappim/ocr/ocr
+    state: upgraded
+
 - name: Install tree
   community.general.homebrew:
     name: tree
