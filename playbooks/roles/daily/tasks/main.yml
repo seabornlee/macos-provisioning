@@ -1,5 +1,10 @@
 ---
 
+- name: Install Camtasia
+  community.general.homebrew_cask:
+    name: camtasia
+    state: upgraded
+
 - name: Install Session messenger
   community.general.homebrew_cask:
     name: session
