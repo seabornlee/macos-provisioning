@@ -4,6 +4,11 @@
     name: schappim/ocr/ocr
     state: upgraded
 
+- name: Install 1Password CLI
+  community.general.homebrew:
+    name: 1password/tap/1password-cli
+    state: upgraded
+
 - name: Install tree
   community.general.homebrew:
     name: tree
